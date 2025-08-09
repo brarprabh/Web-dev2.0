@@ -31,11 +31,128 @@
 
 
        <h1><span style="background-color: tomato;">This is a span title</span></h1>
-       <h1><p>
-        <div style="background-color: cyan;"> This is div </div>
-       </p>
-       </h1>
+       <div style="background-color: cyan;">This is div</div>
+
+       <h4>Groceries</h4>
+       <ul>
+    <li>milk</li>
+    <li>eggs</li>
+    <li>coffee
+        <ul>
+            <li>coffee beans</li>
+            <li>sugar</li>
+        </ul>
+    </li>
+</ul>
+       <h4>To Do List</h4>
+       <ol>
+        <li>eat breakfast</li>
+        <li>go to school</li>
+        <li>walk dog</li>
+        <li>go to work</li>
+       </ol>
+
+       <h4>Mythical Creature</h4>
+       <dl style="background-color: papayawhip; border: 2px solid;">
+        <dt>Dragon</dt>
+        <dd>Dragons in eastern cultures are usually depicted as wingless, four-legged, serpentine creatures with above-average intelligence</dd>
+        <img src="images/dragon.webp" alt="this is a dragon" height="200px">
+        <dt>phonex</dt>
+        <dd>The modern English word phoenix entered the English language from Latin, later reinforced by French</dd>
+        <img src="images/phoenix.jpg" alt="this is a phoenix" height="200px">
+        <dt>vampire</dt>
+        <dd>A vampire is a mythical creature that subsists by feeding on the vital essence (generally in the form of blood) of the living</dd>
+        <img src="images/ODL.jpeg" alt="this is a vampire" height="250px">
+    </dl>
+
+    <h3>Store Hours</h3>
+    <table border="1" style="background-color: black;">
+        <tr align="center" style="background-color: lightblue;">
+
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thrusday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+
+        </tr>
+        <tr align="center" style="background-color: aliceblue;">
+            <td>Closed</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>10-2</td>
+
+        </tr>
+    </table>
+ <br>
+   
+ <button style="font-size: 25px; background-color: grey; color: lightblue; border-radius: 25px;" onclick="doSomething()">Click me</button>
+ 
+
+ <p id="greating">Hello</p>
+<script>
+    function doSomething() {
+        document.getElementById("greating").innerHTML = "Good bye"
+    }
+</script>
+
+
+<form action="index.php" method="post">
+    <label for="username">Username</label>
+     <input type="text" id="username"  placeholder="Spongebob">
+<br>
+     <label for="password">Password</label>
+    <input type="password" name="" id="password">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" name="" id="email">
+<br>
+    <label for="phonenumber">Phone No.</label>
+    <input type="tel" name="" id="phonenumber" placeholder="123-456-7890">
+ <br>
+ <label for="birthday">Bday</label>
+ <input type="date" name="" id="birthday">
     
+<br>
+<label for="quantity">quantity</label>
+<input type="number" name="" id="quantity" min="0" max="99">
+<br>
+
+<label for="Mrs">Mr</label>
+<input type="radio" name="title" id="Mrs" value="Mrs">
+<label for="Miss">Miss</label>
+<input type="radio" name="title" id="Miss" value="Miss">
+<label for="Dr">Dr</label>
+<input type="radio" name="title" id="Dr" value="Dr">
+<br>
+<label for="payment">Payment</label>
+<select name="" id="payment">
+    <option value="visa">Visa</option>
+    <option value="mastercard">Mastercard</option>
+</select>
+
+<br>
+<label for="subscribe">Subscribe</label>
+<input type="checkbox" name="" id="subscribe">
+<br>
+<label for="comment">Comment</label>
+<textarea name="" id="comment" rows="3" cols="25"></textarea>
+ <br>
+
+<label for="file">file</label>
+<input type="file" name="" id="file">
+<br>
+
+ <input type="reset" name="" id="">
+ <br>
+     <input type="submit" >
+</form>
+
 
     </body>
 </html>
